@@ -81,7 +81,7 @@ class _DefaultVaultKitChannel implements _VaultKitChannel {
 /// {@endtemplate}
 class VaultKit {
   /// {@macro vault_kit}
-  VaultKit() : _channel = const _DefaultVaultKitChannel();
+  const VaultKit() : _channel = const _DefaultVaultKitChannel();
 
   final _VaultKitChannel _channel;
 
