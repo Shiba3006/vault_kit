@@ -75,7 +75,8 @@ public class VaultKitPlugin: NSObject, FlutterPlugin {
                                   kSecAttrService:    serviceKey,
                                   kSecAttrAccount:    key,
                                   kSecValueData:      data,
-                                  kSecAttrAccessible: kSecAttrAccessibleWhenUnlockedThisDeviceOnly] as CFDictionary, nil)
+                                  kSecAttrAccessible: kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+                                  kSecAttrSynchronizable: false] as CFDictionary, nil)
         guard status == errSecSuccess else { throw VaultKitError.saveFailed(status) }
     }
 
