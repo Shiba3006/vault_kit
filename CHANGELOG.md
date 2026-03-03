@@ -1,3 +1,5 @@
-## 1.0.0
+## 1.0.1
+- Fix: update README logo path
 
-* TODO: Describe initial release.
+## 1.0.0
+- initial release.
