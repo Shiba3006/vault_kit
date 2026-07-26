@@ -97,10 +97,7 @@ class VaultKit {
     await _channel.invokeVoid('save', {'key': key, 'value': encode(object)});
   }
 
-  Future<T?> _getObject<T>(
-    String key,
-    T Function(dynamic) decode,
-  ) async {
+  Future<T?> _getObject<T>(String key, T Function(dynamic) decode) async {
     final jsonString = await _channel.invokeString('fetch', {'key': key});
     if (jsonString == null) return null;
     return decode(jsonDecode(jsonString));

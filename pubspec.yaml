@@ -1,13 +1,13 @@
 name: vault_kit
 description: Secure credential storage for Flutter using Android Keystore (AES-256-GCM) and iOS Keychain.
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/Shiba3006/vault_kit
 repository: https://github.com/Shiba3006/vault_kit
 issue_tracker: https://github.com/Shiba3006/vault_kit/issues
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.0.0"
+  sdk: ">=3.12.0 <4.0.0"
+  flutter: ">=3.44.0"
 
 flutter:
   plugin:
@@ -25,4 +25,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
